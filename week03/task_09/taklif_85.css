@@ -1,0 +1,79 @@
+.parent {
+    display: grid;
+}
+
+.parent div {
+    background-color: #eee;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    h3 {
+        color: red;
+    }
+    .parent div {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    .parent{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas: "one one one" "two three four";
+    }
+    .one {
+            grid-area: one;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .four {
+            grid-area: four;
+        }
+}
+
+@media (min-width: 1200px) {
+    h3 {
+        color: #16A085;
+    }
+    .parent div {
+        margin-bottom: 0px;
+        width: auto;
+    }
+    .parent{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+        grid-template-areas: "one one" "two three" "four four";
+    }
+    .one {
+            grid-area: one;
+        }
+
+        .two {
+            grid-area: two;
+        }
+
+        .three {
+            grid-area: three;
+        }
+
+        .four {
+            grid-area: four;
+        }    
+}

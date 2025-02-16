@@ -1,0 +1,29 @@
+.first {
+    font-family: 'open sans';
+    font-weight: 300;
+    font-style: italic;
+}
+.second {
+    font-family: cairo ;
+    font-weight: 700;
+}
+.third {
+    font-family: Jomhuria ;
+    font-weight: 400;
+}
+
+
+
+html{
+    font-size: 20px;
+}
+
+.one {
+    font-size: 2.5rem;
+}
+.two{
+    font-size: 2rem;
+}
+.three {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.marg {
+    margin: 20px;
+}
+.one div.main.red {
+    color: red;
+}
+.two .parent :nth-child(2) {
+    color: red;
+}
+.three .parent > :only-child {
+    color: red;
+}
+.four [title = HTML] , [title = Hello] , .four > div:nth-of-type(3){
+    color: red;
+}
+.five div:nth-of-type(2) div {
+    color: red;
+}
+.six > div > div:nth-last-of-type(2):not(.no-need div) {
+    color:red;
+}
+.seven > :first-child div:nth-of-type(2) {
+    color: red;
+}
+.eight div :not(h3 , :first-child , :last-child) {
+    color: red;
+}
